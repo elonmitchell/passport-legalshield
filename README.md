@@ -39,10 +39,10 @@ authenticate requests.
 For example, as route middleware in an [Express](http://expressjs.com/)
 application:
 
-    app.get('/auth/dropbox',
+    app.get('/auth/legalshield',
       passport.authenticate('legalshield'));
 
-    app.get('/auth/dropbox/callback', 
+    app.get('/auth/legalshield/callback', 
       passport.authenticate('legalshield', { failureRedirect: '/login' }),
       function(req, res) {
         // Successful authentication, redirect home.
