@@ -65,7 +65,7 @@ describe('userProfile', function () {
         expect(err).to.exist;
         expect(err.message).to.eql('Error parsing the JWT');
         expect(err.orignal_error).to.exist;
-        expect(err.orignal_error.message).to.eql('First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.');
+        expect(err.orignal_error.message).to.eql('The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received undefined');
         done();
       });
     });
